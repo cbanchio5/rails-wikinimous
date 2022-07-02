@@ -1,0 +1,17 @@
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">wikinimous</a>
+   <%= link_to "New Article", articles_new_path, class:'grey' %>
+</nav>
+
+<div class="container">
+<div class="article">
+<%= link_to "Edit", edit_article_path %>
+<%= link_to "Delete",
+            article_path(@article),
+            method: :delete,
+            data: { confirm: "Are you sure?" } %>
+<h2><%= @article.title %> </h2>
+
+<p><%= @article.content %></p>
+</div>
+</div>

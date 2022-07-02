@@ -1,0 +1,17 @@
+@import "bootstrap/scss/bootstrap";
+
+.container {
+  display:flex;
+  justify-content: center;
+  align-content: center;
+  margin:15px;
+}
+
+.new-article {
+  text-align: center;
+}
+
+.grey {
+  color:blanchedalmond;
+  text-decoration: none;
+}
